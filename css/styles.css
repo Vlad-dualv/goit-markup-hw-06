@@ -703,18 +703,36 @@ ul, ol {
     .portfolio-item {
         width: calc((100% - 24px) / 2);
     }
-}
 
 /*--------------------------------------/ TABLET SECTIONS----------------------------------- */
 
 /*-------------------------------------- TABLET FOOTER----------------------------------- */
 
-.social-media-footer {
-    width: 496px;
-}
 
-.footer-email-input {
-    width: 264px;
+    .social-media-footer {
+        max-width: 584px;
+        display: flex;
+        align-items: first baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }  
+
+    .footer-logo-text {
+        margin-top: 0;
+    }
+
+    .footer-email-input {
+        width: 264px;
+    }
+
+    .footer-subscribe-btn {
+        margin-left: 24px;
+    }
+
+    .footer-subscribe-text {
+        margin-top: 0;
+    }
 }
 
 /*--------------------------------------/ TABLET FOOTER----------------------------------- */
