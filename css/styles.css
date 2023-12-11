@@ -123,6 +123,8 @@ ul, ol {
         transform: translateX(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding-top: 72px;
+        padding-bottom: 40px;
+        display: flex;
     }
     
     .mobile-menu-wrapper.is-open {
@@ -131,8 +133,14 @@ ul, ol {
     
     .mobile-menu-container {
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
     
+    .mobile-contacts-and-social-media-links {
+        margin-top: auto;
+    }
+
     .mobile-menu-close-btn {
         position: absolute;
         top: -24px;
@@ -164,10 +172,6 @@ ul, ol {
     
     .mobile-active-studio {
         color: var(--OCEAN, #404BBF);
-    }
-
-    .mobile-menu-navigation {
-        margin-bottom: 26vh;
     }
     
     .mobile-address-list {
@@ -201,6 +205,7 @@ ul, ol {
         justify-content: space-between;
         align-items: center;
         gap: 40px;
+        margin-top: 48px;
     }
     
     .mobile-social-media-item {
@@ -449,9 +454,6 @@ ul, ol {
 
 .page-footer {
     background-color: #2e2f42;
-}
-
-.social-media-footer {
     padding: 96px 0;
 }
 
@@ -464,6 +466,10 @@ ul, ol {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer-social-media {
+        margin-top: 72px;
     }
 
 }
@@ -480,7 +486,7 @@ ul, ol {
     line-height: 1.5; 
     letter-spacing: 0.02em;
     margin-top: 17.5px;
-    margin-bottom: 72px;
+
     text-align: left;
 }
 
@@ -748,6 +754,7 @@ ul, ol {
     cursor: pointer;
     margin-right: 8px;
     fill: transparent;
+    flex-shrink: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -956,7 +963,7 @@ outline: 1px solid rgba(46, 47, 66, 0.40);
         align-items: first baseline;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
     }  
 
     .footer-logo-text {
@@ -1009,6 +1016,10 @@ outline: 1px solid rgba(46, 47, 66, 0.40);
 
 /*-------------------------------------- DESKTOP HEADER----------------------------------- */
     
+    .page-header {
+        padding: 0;
+    }
+
     .logo {
         margin-right: 76px;
     }
@@ -1019,6 +1030,10 @@ outline: 1px solid rgba(46, 47, 66, 0.40);
         gap: 40px;
     }
 
+    .menu-link {
+        padding: 24px 0;
+    }
+
     .address-link {
         font-size: 16px;
         font-weight: 400;
@@ -1027,7 +1042,7 @@ outline: 1px solid rgba(46, 47, 66, 0.40);
     }
 
     .studio-line::after {
-        bottom: -18px;
+        bottom: -1px;
     }
 
     .address-link:hover,
